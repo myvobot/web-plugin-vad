@@ -203,7 +203,8 @@ export class FrameProcessor implements FrameProcessorInterface {
       !this.speaking
     ) {
       this.speaking = true
-      return { probs, msg: Message.SpeechStart, frame }
+      const audio = concatArrays(this.audioBuffer.map((item) => item.frame))
+      return { probs, msg: Message.SpeechStart, audio, frame }
     }
 
     if (
