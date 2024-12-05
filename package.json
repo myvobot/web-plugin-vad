@@ -26,8 +26,7 @@
     "react-dom": "^18.2.0"
   },
   "workspaces": [
-    "packages/web",
-    "packages/react"
+    "packages/web"
   ],
   "dependencies": {
     "typescript": "^5.2.2"
