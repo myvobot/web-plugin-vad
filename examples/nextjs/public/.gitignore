@@ -1,4 +1,0 @@
-*.wasm
-*.mjs
-*.onnx
-*.worklet.bundle.min.js
